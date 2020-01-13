@@ -25,16 +25,13 @@ const ProfileSchema = new mongoose.Schema({
   bio: {
     type: String
   },
-  bio: {
-    type: String
-  },
   githubusername: {
     type: String
   },
   experience: [
     {
       title: {
-        String,
+        type: String,
         required: true
       },
       company: {
@@ -90,7 +87,6 @@ const ProfileSchema = new mongoose.Schema({
       }
     }
   ],
-
   social: {
     youtube: {
       type: String
